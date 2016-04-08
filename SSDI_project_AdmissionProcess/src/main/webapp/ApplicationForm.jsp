@@ -39,7 +39,7 @@ required-field{
 <br>field blank if you do not have middle name.
 <br>
 </div>
-<form>
+<form><div class="text">
  <div class="col-sm-4" style="background-color:white;">Salutation:
  </div> 
  <select name="Salutation">
@@ -48,19 +48,19 @@ required-field{
  <option value="Mrs.">Mrs.</option>
  <option value="Mr.">Ms.</option>
 </select>
-
+</div>
  <br>
-
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">First Name:<div class="col-sm-1" style="color:red;">*</div>
   </div><input type="text" name="firstname">
-
+</div>
  <br>
-
+<div class="text">
  <div class="col-sm-4">Last Name (Family):<div class="col-sm-1" style="color:red;">*</div>
-</div><input type="text" name="lastname">
+</div><input type="text" name="lastname"> </div>
  <br>
- 
 
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Suffix:
   </div>
 
@@ -73,17 +73,19 @@ required-field{
  <option value="IV.">IV</option>
  <option value="V.">V</option>
 </select>
-
+</div>
    <br>
+   <div class="text">
 <div class="col-sm-4" style="background-color:white;">Preferred First Name:
-  </div><input type="text" name="preffered_firstname">
+  </div><input type="text" name="preffered_firstname"></div>
 <br>
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Other Names that may appear on Transcripts
-  </div><input type="text" name="othername">
+  </div><input type="text" name="othername"></div>
 
  <br> 
  
-
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Sex:<div class="col-sm-1" style="color:red;">*</div>
   </div>
   <select name="Sex">
@@ -91,18 +93,18 @@ required-field{
  <option value="male">Male</option>
  <option value="Female">Female</option>
  </select>
-
+</div>
  <br>
-
+<div class="text">
 <div class="col-sm-2" style="background-color:white;">Date of birth:<div class="col-sm-1" style="color:red;">*</div>
-  </div> <input type="text" name="month">
+  </div> <input type="number" name="month">
  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="Date">
+  <input type="number" name="Date">
 
  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="year">
+  <input type="number" name="year">
   (mm/dd/yyyy)
-  
+  </div>
    <ul class="pager">
     <li><a href="ContactInfo.jsp">Next</a></li>
   
@@ -110,4 +112,3 @@ required-field{
  </form>
  
  </body>
-</html>
