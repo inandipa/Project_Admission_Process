@@ -48,23 +48,22 @@ required-field{
  <option value="Mrs.">Mrs.</option>
  <option value="Mr.">Ms.</option>
 </select>
- </form>
+
  <br>
- <form>
+
 <div class="col-sm-4" style="background-color:white;">First Name:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="firstname">
+
  <br>
- <form>
+
  <div class="col-sm-4">Last Name (Family):<div class="col-sm-1" style="color:red;">*</div>
-</div><input type="text" name="text">
- </form>
+</div><input type="text" name="lastname">
  <br>
  
- <form>
+
 <div class="col-sm-4" style="background-color:white;">Suffix:
   </div>
- </form>
+
  <select name="Suffix">
  <option value=" "></option>
  <option value="jr.">jr.</option>
@@ -74,20 +73,17 @@ required-field{
  <option value="IV.">IV</option>
  <option value="V.">V</option>
 </select>
-   <form>
+
    <br>
 <div class="col-sm-4" style="background-color:white;">Preferred First Name:
-  </div><input type="text" name="text">
-  </form>
- <br>
-   
-  <form>
+  </div><input type="text" name="preffered_firstname">
+<br>
 <div class="col-sm-4" style="background-color:white;">Other Names that may appear on Transcripts
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="othername">
+
  <br> 
  
- <form>
+
 <div class="col-sm-4" style="background-color:white;">Sex:<div class="col-sm-1" style="color:red;">*</div>
   </div>
   <select name="Sex">
@@ -95,67 +91,23 @@ required-field{
  <option value="male">Male</option>
  <option value="Female">Female</option>
  </select>
- </form>
+
  <br>
-<form>
+
 <div class="col-sm-2" style="background-color:white;">Date of birth:<div class="col-sm-1" style="color:red;">*</div>
-  </div> <select name="month">
-  <option value=" ">  </option>
- <option value="january">January</option>
- <option value="Female">February</option>
- <option value=" march">March</option>
- <option value="April">April</option>
- <option value="may">May</option>
- <option value="june">June</option>
- <option value="july">July</option>
- <option value="August">August</option>
- <option value="September">September</option>
- <option value="October">October</option>
- <option value="November">November</option>
-  <option value="December">December</option>
-  </select> <div class="col-sm-1" style="background-color:white;"> </div>
-  <select name="Date">
-  <option value=" ">  </option>
- <option value="1">1</option>
- <option value="2">2</option>
- <option value="3">3</option>
- <option value="4">4</option>
- <option value="5">5</option>
- <option value="7">6</option>
- <option value="8">8</option>
- <option value="9">9</option>
- <option value="10">10</option>
- <option value="11">11</option>
- <option value="12">12</option>
- <option value="13">13</option>
- <option value="14">14</option>
- <option value="15">15</option>
- <option value="16">16</option>
- <option value="17">17</option>
- <option value="18">18</option>
- <option value="19">19</option>
- <option value="20">20</option>
- <option value="21">21</option>
- <option value="22">22</option>
- <option value="23">23</option>
- <option value="24">24</option>
- <option value="25">25</option>
- <option value="26">26</option>
- <option value="27">27</option>
- <option value="28">28</option>
- <option value="29">29</option>
- <option value="30">30</option>
- <option value="31">31</option>
- </select>
+  </div> <input type="text" name="month">
  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="text">
-  (m/d/yyyy)
- </form>
-  <ul class="pager">
+  <input type="text" name="Date">
+
+ <div class="col-sm-1" style="background-color:white;"> </div>
+  <input type="text" name="year">
+  (mm/dd/yyyy)
+  
+   <ul class="pager">
     <li><a href="ContactInfo.jsp">Next</a></li>
   
   </ul>
- <br>
-  </div>
+ </form>
+ 
  </body>
 </html>
