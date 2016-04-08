@@ -1,0 +1,53 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         version="2.5" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         > 
+
+  <display-name>Web_application process</display-name>
+   <welcome-file-list>
+   <welcome-file>index.jsp</welcome-file>
+      </welcome-file-list>
+      
+   <servlet >
+<servlet-name>JspServletApp</servlet-name>
+<servlet-class>com.institute.controller.loginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>JspServletApp</servlet-name>
+<url-pattern>/login</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>JspServletAppllication</servlet-name>
+<servlet-class>com.institute.controller.applicationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>JspServletAppllication</servlet-name>
+<url-pattern>/application</url-pattern>
+</servlet-mapping>
+   
+   <servlet>
+    <servlet-name>LoginControllerServlet</servlet-name>
+ <servlet-class>com.institute.controller.LoginControllerServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+    <servlet-name>LoginControllerServlet</servlet-name>
+ <url-pattern>/LoginControllerServlet</url-pattern>
+</servlet-mapping>
+ <servlet>
+    <servlet-name>SignupControllerServlet</servlet-name>
+ <servlet-class>com.institute.controller.SignupControllerServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+    <servlet-name>SignupControllerServlet</servlet-name>
+ <url-pattern>/SignupControllerServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+<servlet-name>IndexControllerServlet</servlet-name>
+ <servlet-class>com.institute.controller.IndexControllerServlet</servlet-class>
+ </servlet>
+<servlet-mapping>
+    <servlet-name>IndexControllerServlet</servlet-name>
+ <url-pattern>/IndexControllerServlet</url-pattern>
+</servlet-mapping>
+</web-app>
