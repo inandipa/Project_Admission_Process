@@ -58,8 +58,9 @@ required-field{
 </div>
  <br>
 <div class="text">
-<div class="col-sm-4" style="background-color:white;">First Name:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="firstname">
+<div class="col-sm-4" style="background-color:white;">First Name:</div>
+<div class="col-sm-1" style="color:red;">*</div>
+  <input type="text" name="firstname">
 </div>
  <br>
 <div class="text">
