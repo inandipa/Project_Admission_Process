@@ -47,7 +47,7 @@ public class LoginControllerServlet extends HttpServlet {
 
 				  if(model != null){
 				  if(emailid.equals(model.getEmailid())&& password.equals(model.getPassword())){
-					  session.setAttribute("username", model);
+					  session.setAttribute("email", model.getEmailid());
 					  url="/Home.jsp";
 				  }
 				  else if(emailid.equals(model.getEmailid())&& !password.equals(model.getPassword())){
@@ -74,7 +74,7 @@ public class LoginControllerServlet extends HttpServlet {
 
 			  if(model != null){
 			  if(emailid.equals(model.getEmailid())&& password.equals(model.getPassword())){
-				  session.setAttribute("username", model);
+				  session.setAttribute("email", model.getEmailid());
 				  url="/Home.jsp";
 			  }
 			  else if(emailid.equals(model.getEmailid())&& !password.equals(model.getPassword())){
@@ -101,8 +101,8 @@ public class LoginControllerServlet extends HttpServlet {
 
 		  if(model != null){
 		  if(emailid.equals(model.getEmailid())&& password.equals(model.getPassword())){
-			  session.setAttribute("username", model);
-			  url="/Home.jsp";
+			  session.setAttribute("email", model.getEmailid());
+			  url="/ApplicationForm.jsp";
 		  }
 		  else if(emailid.equals(model.getEmailid())&& !password.equals(model.getPassword())){
 			  request.setAttribute("errmessage", "*incorrect password");

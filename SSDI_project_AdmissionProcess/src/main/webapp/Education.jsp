@@ -31,109 +31,72 @@
 </div>
 <h4><b>EDUCATION HISTORY</b></h4>
 <br>
-<form>
+<form action="StudentEducationServlet" method="post">
+<input type="hidden" name ="email" value="<%= session.getAttribute("email") %>">
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">GRE<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="GRE">
+ </div>
  <br>
  <P>You need to submit either TOEFL or IELTS score Mandatory </P>
  <br>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">TOEFL
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="TOFEL">
+ </div>
  <br>
  <br>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">IELTS
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="IELTS">
+ </div>
  <br>
  <br>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">College or University
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="college">
+ </div>
  <br> 
  <br>
-<form>
+<div class="text">
 <div class="col-sm-3" style="background-color:white;">Attend From Date<div class="col-sm-1" style="color:red;">*</div>
   </div>
-  <select name="month">
-  <option value=" ">  </option>
- <option value="january">January</option>
- <option value="Female">February</option>
- <option value=" march">March</option>
- <option value="April">April</option>
- <option value="may">May</option>
- <option value="june">June</option>
- <option value="july">July</option>
- <option value="August">August</option>
- <option value="September">September</option>
- <option value="October">October</option>
- <option value="November">November</option>
-  <option value="December">December</option>
-  </select>
+    <input type="text" name="from_m">
   <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="text">
+  <input type="text" name="from_y">
   (mm/yyyy)
- </form>
+ </div>
  <br>
- <form>
+ <div class="text">
 <div class="col-sm-3" style="background-color:white;">Attend To Date<div class="col-sm-1" style="color:red;">*</div>
   </div>
-  <select name="month">
-  <option value=" ">  </option>
- <option value="january">January</option>
- <option value="Female">February</option>
- <option value=" march">March</option>
- <option value="April">April</option>
- <option value="may">May</option>
- <option value="june">June</option>
- <option value="july">July</option>
- <option value="August">August</option>
- <option value="September">September</option>
- <option value="October">October</option>
- <option value="November">November</option>
-  <option value="December">December</option>
-  </select>
+   <input type="text" name="to_m">
   <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="text">
+  <input type="text" name="to_y">
   (mm/yyyy)
- </form>
- <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Graduation<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+ </div>
  <br>
  <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Graduation Date<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- <br>
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">Degree<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="degree">
+ </div>
  <br>
  <br>
-<form>
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Major<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="major">
+ </div>
  <br>
  <br>
-<form>
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">GPA<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="GPA">
+ </div>
  <br>
  <br>
- <ul class="pager">
-    <li><a href="ContactInfo.jsp">Previous</a></li>
-   <li><a href="Employer.jsp">Next</a></li>
-  </ul>
-
-
+ <div class ="submit"> <input type="submit" name="previous" value="previous"> <input type="submit" name="next" value="next"></div>
+ 
+</form>
 </body>
 </html>

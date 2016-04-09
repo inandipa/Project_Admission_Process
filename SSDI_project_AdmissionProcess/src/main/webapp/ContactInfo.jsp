@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <%@ page import = "com.institute.models.students" %>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -36,99 +37,55 @@ Therefore, it is very important that you enter the information carefully,
 and update it if any changes occur.  If you need to update this information after submitting your application, 
 logon to the portal and click the "Update Your Profile Information" left menu item.
 </div>
-<form>
-<div class="col-sm-4" style="background-color:white;">Email Address<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+
+<form action="StudentContactinfoServlet" method="post" >
+
+<input type="hidden" name ="email" value="<%= session.getAttribute("email") %>">
  <br>
  <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Retype Email Address<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Permanent Phone:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- <br>
- <b><h4>ADDRESS INFROMATION: </h4></b>
- <br><i>
- <p> Present Address Information </p>
- </i>
- <br>
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">Country<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="Country">
+ </div>
  <br>
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">Address Line 1<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="Addline1">
+ </div>
  <br>
  
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">Address Line 2
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="Addline2">
+ </div>
  <br>
  
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">City<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="City">
+ </div>
  <br>
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">State/Province:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="State">
+</div>
  <br>
- <form>
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Postal code:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="Postal"></div>
+  
+   <br>
+ <div class="text">
+<div class="col-sm-4" style="background-color:white;">Phone Number:<div class="col-sm-1" style="color:red;">*</div>
+  </div><input type="text" name="Phone">
+ </div>
  <br>
- <P><i>Permanent Address Information:</i></P>
- <form>
-<div class="col-sm-4" style="background-color:white;">Country<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
+  
+  <br>
+  <div class ="submit"> <input type="submit" name="previous" value="previous"> <input type="submit" name="next" value="next"></div>
  </form>
- <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Address Line 1<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- 
- <form>
-<div class="col-sm-4" style="background-color:white;">Address Line 2
-  </div><input type="text" name="text">
- </form>
- <br>
- 
- <form>
-<div class="col-sm-4" style="background-color:white;">City<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">State/Province:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- <form>
-<div class="col-sm-4" style="background-color:white;">Postal code:<div class="col-sm-1" style="color:red;">*</div>
-  </div><input type="text" name="text">
- </form>
- <br>
- 
-  <ul class="pager">
-    <li><a href="ApplicationForm.jsp">Previous</a></li>
-   <li><a href="Education.jsp">Next</a></li>
-  </ul>
+
+  
  <br> 
 </body>
 </html>

@@ -33,92 +33,40 @@
 <br>
 <br>
 
-<form>
+<form action="StudentEmployerServlet" method="post">
+<input type="hidden" name ="email" value="<%= session.getAttribute("email") %>">
 <div class="col-sm-4" style="background-color:white;"><p>What is your current employee status</p>
   </div>
-  <select name="employe status">
+  <select name="emp_status">
   <option value=" "></option>
  <option value="employed">employed</option>
  <option value="unemployed">unemployed</option>
  </select>
- </form>
+
  <br>
-<p> If Yes,</p>
+
 <br>
-<form>
+<div class="text">
+<p> If Yes,</p>
 <div class="col-sm-4" style="background-color:white;">Employer or Firm:
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="frim">
+ </div>
  <br>
-<form>
+<div class="text">
 <div class="col-sm-4" style="background-color:white;">Position:
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="pos">
+</div>
  <br>
- <form>
+ <div class="text">
 <div class="col-sm-4" style="background-color:white;">Country
-  </div><input type="text" name="text">
- </form>
+  </div><input type="text" name="con">
+ </div><br>
+<div class="text">
+<div class="col-sm-4" style="background-color:white;">Experience(in months)
+  </div><input type="text" name="exp">
+ </div>
  <br>
-<form>
-<div class="col-sm-4" style="background-color:white;">State:
-  </div><input type="text" name="text">
+<div class ="submit"> <input type="submit" name="previous" value="previous"> <input type="submit" name="submit" value="submit"></div>
  </form>
- <br>
- <form>
-<div class="col-sm-3" style="background-color:white;">Employed From<div class="col-sm-1" style="color:red;">*</div>
-  </div>
-  <select name="month">
-  <option value=" ">  </option>
- <option value="january">January</option>
- <option value="Female">February</option>
- <option value=" march">March</option>
- <option value="April">April</option>
- <option value="may">May</option>
- <option value="june">June</option>
- <option value="july">July</option>
- <option value="August">August</option>
- <option value="September">September</option>
- <option value="October">October</option>
- <option value="November">November</option>
-  <option value="December">December</option>
-  </select>
-  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="text">
-  (mm/yyyy)
- </form>
- <br>
- <form>
-<div class="col-sm-3" style="background-color:white;">Employed To<div class="col-sm-1" style="color:red;">*</div>
-  </div>
-  <select name="month">
-  <option value=" ">  </option>
- <option value="january">January</option>
- <option value="Female">February</option>
- <option value=" march">March</option>
- <option value="April">April</option>
- <option value="may">May</option>
- <option value="june">June</option>
- <option value="july">July</option>
- <option value="August">August</option>
- <option value="September">September</option>
- <option value="October">October</option>
- <option value="November">November</option>
-  <option value="December">December</option>
-  </select>
-  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="text" name="text">
-  (mm/yyyy)
- </form>
- <br>
-<form>
-<div class="col-sm-4" style="background-color:white;">Hours or Week
-  </div><input type="text" name="text">
- </form>
- <br>
- <ul class="pager">
-    <li><a href="Education.jsp">Previous</a></li>
-   <li><a href="Submit.jsp">Submit</a></li>
-  </ul>
 </body>
 </html>

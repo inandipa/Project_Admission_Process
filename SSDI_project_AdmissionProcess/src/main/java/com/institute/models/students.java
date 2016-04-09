@@ -5,15 +5,12 @@ import javax.persistence.*;
 public class students {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
 	@Column(name = "Emailid")
 	private String Emailid;
 	@Column(name = "Password")
 	private String Password;
 	@Column (name="Name")
 	private String Name;
-
 	@Column (name="Gender")
 	private String Gender;
 	
@@ -23,9 +20,6 @@ public class students {
 	}
 	public void setGender(String gender) {
 		Gender = gender;
-	}
-	public int getId() {
-		return id;
 	}
 	public String getEmailid() {
 		return Emailid;
@@ -39,10 +33,7 @@ public class students {
 	public void setName(String name) {
 		Name = name;
 	}
-	
-	public void setId(int id) {
-		this.id = id;
-	}
+
 	public String getPassword() {
 		return Password;
 	}

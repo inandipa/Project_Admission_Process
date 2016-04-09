@@ -39,7 +39,14 @@ required-field{
 <br>field blank if you do not have middle name.
 <br>
 </div>
-<form><div class="text">
+
+<form action="StudentProfileServlet" method="post" >
+
+
+
+<input type="hidden" name ="email" value="<%= session.getAttribute("email") %>">
+
+<div class="text">
  <div class="col-sm-4" style="background-color:white;">Salutation:
  </div> 
  <select name="Salutation">
@@ -79,10 +86,11 @@ required-field{
 <div class="col-sm-4" style="background-color:white;">Preferred First Name:
   </div><input type="text" name="preffered_firstname"></div>
 <br>
+<!--------
 <div class="text">
 <div class="col-sm-4" style="background-color:white;">Other Names that may appear on Transcripts
   </div><input type="text" name="othername"></div>
-
+-->
  <br> 
  
 <div class="text">
@@ -97,18 +105,16 @@ required-field{
  <br>
 <div class="text">
 <div class="col-sm-2" style="background-color:white;">Date of birth:<div class="col-sm-1" style="color:red;">*</div>
-  </div> <input type="number" name="month">
+  </div> <input type="text" name="Month">
  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="number" name="Date">
+  <input type="text" name="Date">
 
  <div class="col-sm-1" style="background-color:white;"> </div>
-  <input type="number" name="year">
+  <input type="text" name="year">
   (mm/dd/yyyy)
-  </div>
-   <ul class="pager">
-    <li><a href="ContactInfo.jsp">Next</a></li>
-  
-  </ul>
+  </div><div>   <input type="submit" value="next">
+ </div>
+ 
  </form>
  
  </body>
